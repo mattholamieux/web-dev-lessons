@@ -7,14 +7,13 @@
 - [Reassigning properties](#Reassigning-properties)
 - [More complex data](#More-complex-data-in-objects)
 - [Dot vs. bracket notation](#Dot-notation-vs-bracket-notation)
-- [Review of functions](#Review-of-functions)
 - [Object methods](#Methods-on-objects)
 
 ### Lesson objectives
 
 Learners will be able to...
 - create simple and nested objects 
-- reference properties of objects using key/value pairs
+- reference properties of objects using both dot and bracket notation
 - write functions and add functions to objects as methods
 
 ### Key terms
@@ -148,13 +147,31 @@ console.log(myDog.cohabitants.owner);
 
 ### Dot notation vs. bracket notation 
 
+So far we have accessed properties in objects using _dot notation_. You can also access properties using _bracket notation_. For example, `myDog['name']` is equivalent to `myDog.name`. And `myDog.cohabitants.owner` can also be written as `myDog['cohabitants']['owner']`.
 
----
+So how are dot notation and bracket notation different? The most important difference is in how they handle variables. Sometimes we may want to access a value in our object using a variable that is assigned to the key name. To do this, we have to use bracket notation. I
 
-### Review of functions
+Let's imagine, for example, that we want to allow someone (the user of our app) to search for different pieces of information about our dog. Let's create a variable called `searchInput` to capture the user's request. Now, let's imagine that the user wants to know the breed of the dog. We assign the variable
 
+```
+var searchInput = 'breed'
+```
 
-Peter's section to go here. 
+So now what happens when we try to use our `searchInput` variable to find out the breed of my dog?
+
+```
+console.log(myDog.searchInput)
+// undefined
+```
+
+It comes back as undefined. This is because the JavaScript interpreter is looking for a property in our object that is literally called "searchInput". Of course, the property searchInput does not exist in myDog.
+
+Now look what happens when we try this with bracket notation.
+
+```
+console.log(myDog[searchInput])
+// 'golden lab'
+```
 
 ---
 
@@ -219,8 +236,57 @@ console.log(myDog.speak())
 // 'hello, my name is Ruby. I like chasing squirrels'
 ```
 
-### Optional Discussion and Connections
-- JSON is a popular data storage format based on this object structure
+### Optional Discussion and Extensions
+- JSON is a popular data storage format based on the JavaScript object structure
 - Object-oriented programming languages
 - Preview of object prototypes, constructor functions, and ES6 classes
+
+### Example of an API response in JSON
+```
+{
+  "coord": {
+    "lon": -122.08,
+    "lat": 37.39
+  },
+  "weather": [
+    {
+      "id": 800,
+      "main": "Clear",
+      "description": "clear sky",
+      "icon": "01d"
+    }
+  ],
+  "base": "stations",
+  "main": {
+    "temp": 282.55,
+    "feels_like": 281.86,
+    "temp_min": 280.37,
+    "temp_max": 284.26,
+    "pressure": 1023,
+    "humidity": 100
+  },
+  "visibility": 16093,
+  "wind": {
+    "speed": 1.5,
+    "deg": 350
+  },
+  "clouds": {
+    "all": 1
+  },
+  "dt": 1560350645,
+  "sys": {
+    "type": 1,
+    "id": 5122,
+    "message": 0.0139,
+    "country": "US",
+    "sunrise": 1560343627,
+    "sunset": 1560396563
+  },
+  "timezone": -25200,
+  "id": 420006353,
+  "name": "Mountain View",
+  "cod": 200
+  }                         
+
+```
 
