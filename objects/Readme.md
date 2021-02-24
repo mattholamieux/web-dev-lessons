@@ -10,6 +10,13 @@
 - [Review of functions](#Review-of-functions)
 - [Object methods](#Methods-on-objects)
 
+### Lesson objectives
+
+Learners will be able to...
+- create simple and nested objects 
+- reference properties of objects using key/value pairs
+- write functions and add functions to objects as methods
+
 ### Key terms
 - Key: The name used to reference a value on an object
 - Value: The data referenced by a key
@@ -146,7 +153,9 @@ console.log(myDog.cohabitants.owner);
 
 ### Review of functions
 
+
 Peter's section to go here. 
+
 ---
 
 ### Methods on objects
