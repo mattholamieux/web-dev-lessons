@@ -1,4 +1,5 @@
 # Objects in JavaScript
+- [Lesson objectives](#Lesson-objectives)
 - [Key terms](#Key-terms)
 - [What is an object](#What-is-an-object?)
 - [Why do we need objects](#Why-do-we-need-objects?)
@@ -8,6 +9,7 @@
 - [More complex data](#More-complex-data-in-objects)
 - [Dot vs. bracket notation](#Dot-notation-vs-bracket-notation)
 - [Object methods](#Methods-on-objects)
+- [Discussion & extensions](#Optional-Discussion-and-Extensions)
 
 ### Lesson objectives
 
@@ -235,6 +237,8 @@ console.log(myDog.speak())
 
 // 'hello, my name is Ruby. I like chasing squirrels'
 ```
+
+---
 
 ### Optional Discussion and Extensions
 - JSON is a popular data storage format based on the JavaScript object structure
