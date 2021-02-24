@@ -6,6 +6,8 @@
 - [Adding properties to objects](#Adding-properties-to-objects)
 - [Reassigning properties](#Reassigning-properties)
 - [More complex data](#More-complex-data-in-objects)
+- [Dot vs. bracket notation](#Dot-notation-vs-bracket-notation)
+- [Review of functions](#Review-of-functions)
 - [Object methods](#Methods-on-objects)
 
 ### Key terms
@@ -137,6 +139,11 @@ console.log(myDog.cohabitants.owner);
 
 ---
 
+### Dot notation vs. bracket notation 
+
+
+---
+
 ### Review of functions
 
 Peter's section to go here. 
@@ -203,6 +210,8 @@ console.log(myDog.speak())
 // 'hello, my name is Ruby. I like chasing squirrels'
 ```
 
-### Discussion and Connections
+### Optional Discussion and Connections
 - JSON is a popular data storage format based on this object structure
 - Object-oriented programming languages
+- Preview of object prototypes, constructor functions, and ES6 classes
+
