@@ -44,7 +44,6 @@ Althernatively, we could create a whole series of variables to hold that informa
   ```
 However, these variables aren’t tied together in any sensible way. There is no way for our program to know that the variables `dogName` and `breed` refer to the same thing. 
 
----
 
 This is where objects come in handy. Objects allow us to collect key-value pairs, or _properties_, into a single object. 
 ```
@@ -55,6 +54,8 @@ var myDog = {
     age: 7
 }
 ```
+
+---
 
 ### How to access data in an object
 
@@ -136,6 +137,11 @@ console.log(myDog.cohabitants.owner);
 
 ---
 
+### Review of functions
+
+Peter's section to go here. 
+---
+
 ### Methods on objects
 
 So far we have seen how objects can hold data about an object. However, we can also capture behavior, or functionality, in an object. We do this by assigning a function to the value of a key in an object. This is called a method. Let's add `bark` method to our dog object.
@@ -196,3 +202,7 @@ console.log(myDog.speak())
 
 // 'hello, my name is Ruby. I like chasing squirrels'
 ```
+
+### Discussion and Connections
+- JSON is a popular data storage format based on this object structure
+- Object-oriented programming languages
